@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>收集卡详情</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="detail-page">
+    <div class="detail-shell">
+      <header class="detail-header">
+        <div class="detail-title-row">
+          <h1 id="detail-title">加载中...</h1>
+          <button id="edit-title-btn" class="icon-button" aria-label="编辑标题">✏️</button>
+        </div>
+        <div class="detail-link-row">
+          <span class="muted">原始链接：</span>
+          <a id="detail-link" href="#" target="_blank" rel="noopener" class="detail-link">--</a>
+        </div>
+        <div class="detail-tags-row">
+          <div class="detail-tags-header">
+            <span class="muted">标签</span>
+            <button id="edit-tags-btn" class="icon-button" aria-label="编辑标签">✏️</button>
+          </div>
+          <div id="detail-tags" class="tag-chips"></div>
+        </div>
+      </header>
+
+      <section class="detail-body">
+        <div class="detail-toolbar">
+          <button id="add-session-btn" class="primary-button">添加新会话</button>
+        </div>
+        <div id="session-list" class="session-list"></div>
+      </section>
+    </div>
+
+    <div id="menu-root"></div>
+    <div id="modal-root"></div>
+
+    <script type="module" src="./scripts/cardDetail.js"></script>
+  </body>
+</html>
